@@ -32,7 +32,10 @@ def status_to_words(raw_status,noun=False):
     stops = stops.union([u'hasn',u'm',u've',u'll',u're',u'didn',u'us',
                          u'im',u'doesn',u'couldn',u'won',u'isn',u'http',
                          u'www',u'like',u'one',u'would',u'get',u'want',
-                         u'really',u'could',u'even',u'much',u'make',u'good']) 
+                         u'really',u'could',u'even',u'much',u'make',u'good',
+                         u'love',u'hate',u'never',u'also',u'think',u'know',
+                        u'believe',u'need',u'someone',u'people',u'person',
+                        u'experience',u'project',u'member',u'thoughts']) 
     # 
     # 5. Remove stop words
     meaningful_words = [w for w in words if not w in stops]
